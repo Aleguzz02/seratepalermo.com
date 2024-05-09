@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Page title -->
+    <title>Serate Palermo</title>
+    <!-- Add meta viewport tag for responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- External stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Leaflet CSS for map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <!-- Leaflet JavaScript for map -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <div class="topnav">
+        <a id="home" class="active" href="index.html">Home</a>
+        <!-- Login button -->
+        <a href="login.html">
+            <button id="login">Login</button>
+        </a>
+    </div>
+
+    <div>
+        <h1>SeratePalermo.it</h1>
+    </div>
+
+    <!-- Map container -->
+    <div id="map"></div>
+    
+    <!-- Day selection menu -->
+    <div>
+        <label for="daySelect">Scegli il giorno:</label>
+        <input type="date" id="daySelect" name="daySelect" onchange="filterMarkers()">
+        <button id="Today" onclick="selectToday()">Oggi</button>
+        <button id="daySelectAll" onclick="handleAllSelection()">Tutti</button>
+    </div>
+
+    <!-- List of events -->
+    <div class="list">
+        <table>
+            <caption>Eventi</caption>
+            <tbody>
+                <tr id="AlbertiniBeachClub"> <!-- Added unique ID for Event 1 -->
+                    <!-- Event 1 -->
+                    <th scope="row">Albertini Beach Club
+                        <a href="serata1.html">Dettagli</a>
+                        <button class="scrollToMapButton">Vedi sulla mappa</button>
+                    </th>
+                </tr>
+                <tr id="Vintage"> <!-- Added unique ID for Event 2 -->
+                    <!-- Event 2 -->
+                    <th scope="row">Vintage
+                        <a href="serata2.html">Dettagli</a>
+                        <button class="scrollToMapButton">Vedi sulla mappa</button>
+                    </th>
+                </tr>
+                <tr id="Wave"> <!-- Added unique ID for Event 3 -->
+                    <!-- Event 3 -->
+                    <th scope="row">Wave
+                        <a href="serata3.html">Dettagli</a>
+                        <button class="scrollToMapButton">Vedi sulla mappa</button>
+                    </th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Bottom navigation bar -->
+    <div class="bottomnav">
+        <a href="chisiamo.html">Chi siamo</a>
+        <a href="contatti.html">Contatti</a>
+    </div>
+</body>
+<!-- External JavaScript file -->
+<script src="script.js"></script>
+</html>

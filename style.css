@@ -1,0 +1,208 @@
+/* General styling for the body */
+body {
+    background-color: rgb(32, 32, 32);
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x: hidden;
+}
+
+/* Styling for the top navigation bar */
+.topnav {
+    background-color: rgb(63, 63, 63);
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid white;
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Push the elements to the left and right edges */
+    max-width: 100%;
+}
+
+/* Styling for links within the top navigation */
+.topnav #home {
+    color: white;
+    margin-left: 3%;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+/* Styling for the h1 heading */
+h1 {
+    text-align: center; /* Center align the heading */
+    color: rgb(173, 200, 223); /* Set the text color */
+    font-size: 32px; /* Define the font size */
+    text-transform: uppercase; /* Convert text to uppercase */
+    letter-spacing: 2px; /* Add letter spacing for a modern look */
+    margin-top: 20px; /* Adjust margin for spacing */
+}
+
+/* Styling for the login button */
+#login {
+    margin-left: auto;
+    text-align: center;
+    background-color: rgb(173, 200, 223);
+    border-radius: 25px;
+    font-size: 16px;
+}
+
+/* Styling for the map */
+#map {
+    min-height: 200px; /* Set a fixed minimum height for the map */
+    height: 50vh; /* Use 50% of the viewport height as a fallback */
+    width: 100%; /* Use full width for better responsiveness */
+    border-radius: 18px;
+    margin-top: 15px;
+    border: 1px solid white;
+}
+
+/* Styling for the day selection dropdown */
+#daySelect select {
+    padding: 10px; /* Add padding for better visual appearance */
+    border-radius: 5px; /* Apply border radius for rounded corners */
+    border: 2px solid rgb(173, 200, 223); /* Add border for contrast */
+    background-color: rgb(63, 63, 63); /* Set background color */
+    color: white; /* Set text color */
+    font-size: 16px; /* Define font size */
+    appearance: none; /* Remove default dropdown arrow */
+    background-image: url('data:image/svg+xml;utf8,<svg fill="white" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>'); /* Add custom dropdown arrow */
+    background-repeat: no-repeat; /* Prevent arrow from repeating */
+    background-position: 95% center; /* Position the arrow to the right */
+}
+#daySelect label {
+    margin-top: 10px; /* Adjust the right margin of the label for positioning */
+}
+
+/* Styling for the day selection dropdown */
+#daySelect select {
+    padding: 8px; /* Add padding for better visual appearance */
+    border-radius: 5px; /* Apply border radius for rounded corners */
+    border: 1px solid white; /* Add border for contrast */
+    background-color: rgb(63, 63, 63); /* Set background color */
+    color: white; /* Set text color */
+    font-size: 16px; /* Define font size */
+}
+
+/* Styling for the specific buttons */
+#Today,
+#daySelectAll {
+    padding: 7px 15px; /* Add padding for better visual appearance */
+    margin: 10px 1px; /* Add margin for spacing */
+    background-color: rgb(173, 200, 223); /* Set the background color */
+    color: white; /* Set the text color */
+    border: none; /* Remove the border */
+    border-radius: 5px; /* Apply border radius for rounded corners */
+    font-size: 15px; /* Define the font size */
+    cursor: pointer; /* Change the cursor to a pointer on hover */
+    transition: background-color 0.3s ease; /* Add a smooth transition for the background color */
+    display: inline-block; /* Display the buttons in one line */
+}
+
+#Today:hover,
+#daySelectAll:hover {
+    background-color: rgb(133, 160, 183); /* Change the background color on hover */
+}
+
+/* Styling for tables */
+table {
+    border-collapse: collapse;
+    border: 1px solid white;
+    margin: 10% auto; /* Adjust margin for better positioning on smaller screens */
+    color: white;
+    width: 80%; /* Use percentage for better responsiveness */
+    max-width: 300px; /* Set a maximum width for smaller screens */
+}
+
+/* Add borders to separate the rows of the table */
+table tr {
+    border-bottom: 1px solid white;
+}
+
+/* Styling for the scrollToMapButton button */
+.scrollToMapButton {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    background-color: rgb(173, 200, 223);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.scrollToMapButton:hover {
+    background-color: rgb(133, 160, 183);
+}
+
+/* Styling for the caption of the table */
+caption {
+    font-size: 20px; /* Set the font size */
+    color: rgb(173, 200, 223); /* Set the text color */
+    text-transform: uppercase; /* Convert text to uppercase */
+    letter-spacing: 1px; /* Add letter spacing for a modern look */
+    padding: 10px; /* Add padding for better visual appearance */
+    background-color: rgb(63, 63, 63); /* Set background color */
+    border-radius: 5px; /* Apply border radius for rounded corners */
+    margin-bottom: 10px; /* Adjust margin for spacing */
+}
+
+/* Styling for the "Dettagli" link */
+.list a {
+    display: block; /* Display the link as a block-level element */
+    margin-top: 8px; /* Add margin for spacing */
+}
+
+/* Styling for the "work in progress" text */
+#workinprogress {
+    color: white;
+    text-align: center;
+    font-size: 20pt; /* Decrease font size for smaller screens */
+}
+
+/* Styling for the bottom navigation */
+.bottomnav {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    background-color: rgb(63, 63, 63);
+    border-top: 1px solid white;
+    padding: 1%;
+}
+
+/* Styling for links within the bottom navigation */
+.bottomnav a {
+    color: white;
+    margin-left: 5%; /* Use percentage for better spacing */
+}
+
+/* Images style */
+img {
+    margin-top: 5%; /* Use percentage for better spacing */
+    border-radius: 25px;
+    max-width: fit-content;
+    height: auto;
+    width: 100%; /* Adjust width for smaller screens */
+}
+
+.highlight {
+    background-color: rgb(112, 112, 110);
+    font-weight: bold;
+}
+
+#textParagraph {
+    text-align: justify;
+}
+
+#eventTitle {
+  font-size: 24px;
+  color: #804f4f;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  text-align: center;
+}
