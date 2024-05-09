@@ -32,7 +32,7 @@ body {
 h1 {
     text-align: center; /* Center align the heading */
     color: rgb(173, 200, 223); /* Set the text color */
-    font-size: 32px; /* Define the font size */
+    font-size: 25px; /* Define the font size */
     text-transform: uppercase; /* Convert text to uppercase */
     letter-spacing: 2px; /* Add letter spacing for a modern look */
     margin-top: 20px; /* Adjust margin for spacing */
@@ -198,6 +198,7 @@ img {
     text-align: justify;
 }
 
+/* Styling the title of the event */
 #eventTitle {
   font-size: 24px;
   color: #804f4f;
@@ -205,4 +206,31 @@ img {
   text-transform: uppercase;
   margin-bottom: 10px;
   text-align: center;
+}
+
+.container {
+    max-width: 1200px; /* Set a maximum width for the container */
+    margin: 0 auto; /* Center the container horizontally */
+    margin-bottom: 50px;
+    padding: 0 10px; /* Add padding to the sides for better spacing */
+    overflow: hidden; /* Clear floats within the container */
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow the items to wrap to the next line on smaller screens */
+    justify-content: space-between; /* Distribute the items evenly with space in between */
+}
+
+.container .item {
+    width: calc(33.33% - 20px); /* Calculate the width for each item with margins included */
+    margin: 20px 0; /* Add margin to the top and bottom of each item */
+    color: white; /* Set the text color */
+    padding: 20px; /* Add padding to the items for better spacing */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    text-align: center; /* Center align the content within the items */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .container .item {
+        width: calc(50% - 20px); /* Adjust the width for smaller screens to display 2 items per row */
+    }
 }
