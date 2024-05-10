@@ -10,7 +10,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 // Events
 var eventsData = [
     { name: "AlbertiniBeachClub", lat: 38.15992, lng: 13.08529, date: "2024-05-11", org: "Fireworks" },
-    { name: "HypeClub", lat: 38.157069726710084, lng: 13.326524121981775, date: "2024-05-11", org: "Habitat"},
+    { name: "HypeClub", lat: 38.157069726710084, lng: 13.326524121981775, date: "2024-05-11", org: "HabitatRememberEclipseMood"},
     { name: "MOB", lat: 38.16178943269464, lng: 13.165000936024295, date: "2024-05-18", org: "Remember" },
     // ... more event data
     { name: "All day", lat: 38.090, lng: 13.340, date: "all" }
