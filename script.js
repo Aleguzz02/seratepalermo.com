@@ -20,7 +20,7 @@ lc.getContainer().onclick = function() {
    lc.start();
    map.on('locationfound', function(e) {
       var loc = e.latlng;
-      map.flyTo(loc, 12);
+      map.flyTo(loc, 16);
    });
 };
 
