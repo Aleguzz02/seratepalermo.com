@@ -7,6 +7,23 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
+var lc = L.control
+  .locate({
+    strings: {
+      title: "Mostrami la mia posizione"
+    }
+  })
+  .addTo(map);
+
+// Fly to the specified coordinates when the locate control is activated
+lc.getContainer().onclick = function() {
+   lc.start();
+   map.on('locationfound', function(e) {
+      var loc = e.latlng;
+      map.flyTo(loc, 12);
+   });
+};
+
 // Events
 var eventsData = [
     { name: "CountryDiscoclub", lat: 38.1890497, lng: 13.3205242, date: "2024-05-18", org: "Tnos" },
