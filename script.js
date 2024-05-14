@@ -21,12 +21,13 @@ lc.getContainer().onclick = function() {
    map.on('locationfound', function(e) {
    });
 };
-
+38.127217933130424, 13.356115895947491
 // Events
 var eventsData = [
     { name: "CountryDiscoclub", lat: 38.1890497, lng: 13.3205242, date: "2024-05-18", org: "Tnos" },
     //{ name: "HypeClub", lat: 38.157069726710084, lng: 13.326524121981775, date: "2024-05-11", org: "HabitatRememberEclipseMood"},
     { name: "MOB", lat: 38.16178943269464, lng: 13.165000936024295, date: "2024-05-18", org: "Remember" },
+    { name: "BerlinCafe", lat: 38.127217933130424, lng: 13.356115895947491, date: "2024-05-15", org: "Boulevard" },
     // ... more event data
     { name: "All day", lat: 38.090, lng: 13.340, date: "all" }
 ];
