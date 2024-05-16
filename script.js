@@ -27,7 +27,7 @@ var eventsData = [
     { name: "CountryDiscoclub", lat: 38.1890497, lng: 13.3205242, date: "2024-05-18", org: "Tnos" },
     { name: "LaCavallerizza", lat: 38.11582861406742, lng: 13.369869265926134, date: "2024-05-17", org: "Hangover"},
     { name: "MOB", lat: 38.16178943269464, lng: 13.165000936024295, date: "2024-05-18", org: "Remember" },
-    { name: "BerlinCafe", lat: 38.127217933130424, lng: 13.356115895947491, date: "2024-05-15", org: "Boulevard" },
+    //{ name: "BerlinCafe", lat: 38.127217933130424, lng: 13.356115895947491, date: "2024-05-15", org: "Boulevard" },
     { name: "AlbertiniBeachClub", lat: 38.1599501, lng: 13.0852620, date: "2024-05-19", org: "Habitat" },
     // ... more event data
     { name: "All day", lat: 38.090, lng: 13.340, date: "all" }
