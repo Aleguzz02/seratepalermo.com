@@ -29,6 +29,7 @@ var eventsData = [
     { name: "MOB", lat: 38.16178943269464, lng: 13.165000936024295, date: "2024-05-18", org: "Remember" },
     //{ name: "BerlinCafe", lat: 38.127217933130424, lng: 13.356115895947491, date: "2024-05-15", org: "Boulevard" },
     { name: "AlbertiniBeachClub", lat: 38.1599501, lng: 13.0852620, date: "2024-05-19", org: "Habitat" },
+    { name: "161", lat: 38.1381172, lng: 13.3472967, date: "2024-05-18", org: "Everyday" },
     { name: "Solemar", lat: 38.1838350, lng: 13.3637537, date: "2024-05-25", org: "Everyday" },
     // ... more event data
     { name: "All day", lat: 38.090, lng: 13.340, date: "all" }
